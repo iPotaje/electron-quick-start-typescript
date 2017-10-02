@@ -10,7 +10,7 @@
     "clean": "rm -rf build",
     "dev": "./node_modules/nodemon/bin/nodemon.js -e ts  --exec \"npm run start\""
   },
-  "repository": "https://github.com/ipotaje/electron-quick-start-typescript",
+  "repository": "https://github.com/iPotaje/electron-quick-start-typescript",
   "keywords": [
     "Electron",
     "typescript",
