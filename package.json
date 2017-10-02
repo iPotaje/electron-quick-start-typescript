@@ -1,22 +1,25 @@
 {
-  "name": "electron-quick-start",
+  "name": "electron-quick-start-typescript",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "A minimal Electron application with typescript",
   "main": "main.js",
   "scripts": {
-    "start": "electron build/main.js",
-    "compile": "tsc && electron build/main.js",
-    "dev": "./node_modules/nodemon/bin/nodemon.js -e ts  --exec \"npm run compile\""
+    "start": "npm run compile && npm run run",
+    "compile": "tsc",
+    "run": "electron build/main.js",
+    "clean": "rm -rf build",
+    "dev": "./node_modules/nodemon/bin/nodemon.js -e ts  --exec \"npm run start\""
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/ipotaje/electron-quick-start-typescript",
   "keywords": [
     "Electron",
+    "typescript",
     "quick",
     "start",
     "tutorial",
     "demo"
   ],
-  "author": "GitHub",
+  "author": "iPotaje",
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "~1.7.8",
